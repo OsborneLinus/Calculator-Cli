@@ -46,8 +46,7 @@ const divideButton = document.getElementById("divide");
 const calculateButton = document.getElementById("calculate");
 const clearButton = document.getElementById("clear");
 
-function handleOperationButton(event) {
-  const operation = event.target.dataset.operation;
+function handleOperationButton(operationType) {
   if (firstNumber === null) {
     firstNumber = parseFloat(currentNumber);
     currentNumber = "";
@@ -58,13 +57,17 @@ function handleOperationButton(event) {
     insertPlace.innerText = "";
   }
   insertPlace.innerText = "";
-  this.operation = operation;
+  operation = operationType;
 }
 
-addButton.addEventListener("click", handleOperationButton);
-subtractButton.addEventListener("click", handleOperationButton);
-multiplyButton.addEventListener("click", handleOperationButton);
-divideButton.addEventListener("click", handleOperationButton);
+addButton.addEventListener("click", () => handleOperationButton("add"));
+subtractButton.addEventListener("click", () =>
+  handleOperationButton("subtract")
+);
+multiplyButton.addEventListener("click", () =>
+  handleOperationButton("multiply")
+);
+divideButton.addEventListener("click", () => handleOperationButton("divide"));
 
 calculateButton.addEventListener("click", () => {
   if (firstNumber !== null && currentNumber !== "") {
