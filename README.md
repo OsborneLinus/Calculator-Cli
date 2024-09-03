@@ -1,3 +1,5 @@
+# Calculator-Cli
+
 An unfinished calculator made for a school project. Uses Tailwind and vanilla JS.
 
 To get started:
