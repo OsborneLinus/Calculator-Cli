@@ -5,47 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
+    <button class="text-5xl m-4 border-black border-solid border-2 rounded p-2 darkModeBtn borderToWhite textToWhite hover:bg-neutral-800 hover:text-white" onclick="darkMode()"><i class="fa-solid fa-moon "></i></button>
     <div>
-      <h1 class="text-center text-5xl p-8">Calculator App</h1>
+      <h1 class="text-center text-5xl p-8 textToWhite">Calculator App</h1>
       <div
-        class="grid grid-cols-4 grid-rows-6 border-solid border-2 border-black mx-96 h-96 rounded-lg text-white"
+        class="grid grid-cols-4 grid-rows-6 border-solid border-2 border-black mx-96 h-96 rounded-lg text-white borderToWhite"
       >
         <p
-          class="col-start-1 col-end-5 text-center border-2 border-black text-4xl bg-slate-600 p-2"
+          class="col-start-1 col-end-5 text-center border-2 border-black text-4xl bg-slate-600 p-2 borderToWhite"
           id="output"
         ></p>
-        <button class="bg-slate-500" id="clear">AC</button>
-        <button class="bg-slate-500">+/-</button>
-        <button class="bg-slate-500" id="percentage">%</button>
-        <button class="bg-orange-500" id="divide" data-operation="divide">
+        <button class="bg-slate-500 hover:bg-slate-600" id="clear">AC</button>
+        <button class="bg-slate-500 hover:bg-slate-600">+/-</button>
+        <button class="bg-slate-500 hover:bg-slate-600" id="percentage">%</button>
+        <button class="bg-orange-500 hover:bg-orange-600" id="divide" data-operation="divide">
           /
         </button>
-        <button class="number-button bg-slate-400" id="num7">7</button>
-        <button class="number-button bg-slate-400" id="num8">8</button>
-        <button class="number-button bg-slate-400" id="num9">9</button>
-        <button class="bg-orange-500" id="multiply" data-operation="multiply">
+        <button class="number-button bg-slate-400 hover:bg-slate-500" id="num7">7</button>
+        <button class="number-button bg-slate-400 hover:bg-slate-500" id="num8">8</button>
+        <button class="number-button bg-slate-400 hover:bg-slate-500" id="num9">9</button>
+        <button class="bg-orange-500 hover:bg-orange-600" id="multiply" data-operation="multiply">
           X
         </button>
-        <button class="number-button bg-slate-400" id="num4">4</button>
-        <button class="number-button bg-slate-400" id="num5">5</button>
-        <button class="number-button bg-slate-400" id="num6">6</button>
-        <button class="bg-orange-500" id="subtract" data-operation="subtract">
+        <button class="number-button bg-slate-400 hover:bg-slate-500" id="num4">4</button>
+        <button class="number-button bg-slate-400 hover:bg-slate-500" id="num5">5</button>
+        <button class="number-button bg-slate-400 hover:bg-slate-500" id="num6">6</button>
+        <button class="bg-orange-500 hover:bg-orange-600" id="subtract" data-operation="subtract">
           -
         </button>
-        <button class="number-button bg-slate-400" id="num1">1</button>
-        <button class="number-button bg-slate-400" id="num2">2</button>
-        <button class="number-button bg-slate-400" id="num3">3</button>
-        <button class="bg-orange-500" id="add" data-operation="add">+</button>
+        <button class="number-button bg-slate-400 hover:bg-slate-500" id="num1">1</button>
+        <button class="number-button bg-slate-400 hover:bg-slate-500" id="num2">2</button>
+        <button class="number-button bg-slate-400 hover:bg-slate-500" id="num3">3</button>
+        <button class="bg-orange-500 hover:bg-orange-600" id="add" data-operation="add">+</button>
         <button
-          class="number-button col-start-1 col-end-3 bg-slate-400"
+          class="number-button col-start-1 col-end-3 bg-slate-400 hover:bg-slate-500"
           id="num0"
         >
           0
         </button>
-        <button class="number-button bg-slate-400" id="comma">,</button>
-        <button class="bg-orange-500" id="calculate">=</button>
+        <button class="number-button bg-slate-400 hover:bg-slate-500" id="comma">,</button>
+        <button class="bg-orange-500 hover:bg-orange-600" id="calculate">=</button>
       </div>
     </div>
     <script src="app.js"></script>
